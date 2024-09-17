@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wissenschaft: Der Antrieb des Fortschritts</title>
     <style>
+        /* تنسيق الجسم الأساسي */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -12,36 +13,50 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
+        /* تنسيق الترويسة (Header) */
         header {
             background: #333;
             color: #fff;
-            padding: 1em 0;
-            text-align: center;
+            padding: 1em 2em;
+            display: flex;
+            justify-content: space-between; /* توزيع العناصر بين اللوغو والعنوان */
+            align-items: center; /* التأكد من أن اللوغو والعنوان في نفس الخط */
         }
 
+        /* تنسيق اللوغو ليكون بحجم أصغر وفي الجانب الأيمن */
         .logo {
-            width: 150px;
+            width: 80px; /* حجم أصغر للوغو */
             height: auto;
         }
+
+        /* تنسيق القائمة */
         nav {
-            margin: 0;
-            padding: 0;
-            list-style: none;
+            margin-top: 10px;
         }
+
         nav a {
             color: #fff;
             text-decoration: none;
             padding: 0.5em 1em;
             display: inline-block;
         }
+
+        /* تنسيق المحتوى الرئيسي */
         main {
             padding: 20px;
             max-width: 800px;
             margin: auto;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
+
         h1, h2 {
             color: #333;
         }
+
+        /* تنسيق الفوتر ليكون ثابتًا في الأسفل */
         footer {
             background: #333;
             color: #fff;
@@ -51,6 +66,8 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* تنسيق الزر */
         button {
             background-color: #333;
             color: #fff;
@@ -58,72 +75,28 @@
             padding: 10px 20px;
             cursor: pointer;
             font-size: 16px;
+            margin-top: 20px;
         }
+
         button:hover {
             background-color: #555;
         }
 
-
-        /* إعادة ضبط التباعد والهوامش الافتراضية */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* تنسيق الجسم الأساسي */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-/* العنوان الرئيسي */
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-/* تنسيق المحتوى */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* تنسيق الأعمدة (مفيد لعرض العناصر جنبًا إلى جنب في الشاشة الكبيرة) */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex: 1;
-    padding: 10px;
-}
-
-/* تنسيق خاص للشاشات الصغيرة (مثل الهواتف) */
-@media only screen and (max-width: 768px) {
-    .row {
-        flex-direction: column;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-}
-
+        /* تحسين التباعد بين العناصر في الشاشات الصغيرة */
+        @media only screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo {
+                width: 60px;
+                margin-bottom: 10px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+        }
     </style>
-    
-    
 </head>
 <body>
     <header>
