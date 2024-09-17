@@ -57,7 +57,68 @@
         button:hover {
             background-color: #555;
         }
+
+
+        /* إعادة ضبط التباعد والهوامش الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تنسيق الجسم الأساسي */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* العنوان الرئيسي */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* تنسيق المحتوى */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق الأعمدة (مفيد لعرض العناصر جنبًا إلى جنب في الشاشة الكبيرة) */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+/* تنسيق خاص للشاشات الصغيرة (مثل الهواتف) */
+@media only screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
     </style>
+    
+    
 </head>
 <body>
     <header>
