@@ -81,6 +81,16 @@
             background-color: #555;
         }
 
+        details{
+            background-color: #f9f9f9;
+            border: 0.5px solid #9c9c9c;
+            border-radius: 20px;
+            padding: 2px;
+            width: 300px;
+        }
+
+        
+
         /* تحسين التباعد بين العناصر في الشاشات الصغيرة */
         @media only screen and (max-width: 768px) {
             header {
@@ -124,7 +134,20 @@
         <section id="applications">
             <h2>Anwendungen der Wissenschaft</h2>
             <ul>
-                <li><strong>Gesundheitsversorgung:</strong> Entwicklung von Medikamenten und Behandlungen, die Leben retten und die Lebensqualität verbessern.</li>
+                <li><strong>Gesundheitsversorgung:</strong> Entwicklung von Medikamenten und Behandlungen, die Leben retten und die Lebensqualität verbessern.
+                    <details><summary>Mehr</summary>
+                        <ul>
+                            <li>
+                                    <strong>Biopharmazeutika:</strong>Diese auf Proteinen, Antikörpern oder DNA/RNA basierenden Medikamente, wie z. B. monoklonale Antikörper, haben die Behandlung von Krebs, Autoimmunerkrankungen und genetischen Störungen revolutioniert.<br></li>
+                            <li>
+                                    <strong>Personalisierte Medizin:</strong>Fortschritte in der Genomforschung haben es ermöglicht, Medikamente gezielt auf die genetischen Merkmale eines Patienten abzustimmen, was die Wirksamkeit erhöht und Nebenwirkungen minimiert.<br></li>
+
+                            <li>    <strong>Immuntherapien:</strong>Besonders in der Onkologie haben Immuntherapien, bei denen das körpereigene          Immunsystem aktiviert wird, um Krebszellen zu bekämpfen, zu bahnbrechenden Erfolgen geführt.<br></li>
+                            
+                        </ul>
+                     </details>
+                
+                </li>
                 <li><strong>Technologie:</strong> Entwicklung moderner elektronischer Geräte und Technologien, die unser Leben erleichtern.</li>
                 <li><strong>Umwelt:</strong> Forschung nach Wegen zum Schutz und zur Erhaltung der Umwelt.</li>
                 <li><strong>Weltraum:</strong> Erforschung des Weltraums und Erweiterung unseres Verständnisses des Universums.</li>
